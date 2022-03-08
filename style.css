@@ -33,10 +33,14 @@ a:hover {
     margin: auto;
     text-align: center;
     font-family: arial;
-    font-size: 14px;
+    font-size: 16px;
     color: black !important;
     line-height: 2.5rem;
     max-width: 550px;
+}
+.info{
+    font-size: 16px;
+    padding-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -45,6 +49,11 @@ a:hover {
     }
     .quote{
         padding: 3rem 0 6rem 0;
+    }
+    li > a:hover{
+        border-bottom: 2px solid #364775;
+        margin-bottom: -2px!important;
+        color: black!important;
     }
 }
 @media (min-width: 991px) {
@@ -328,7 +337,7 @@ a:hover {
 }
 
 #bloc-2-services p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navbar {
@@ -698,6 +707,11 @@ a {
     color: #575757!important;
 }
 
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -747,6 +761,9 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
+.social:hover{
+    color: #E4EF6C!important;
+}
 
 h2 {
     font-size: 22px;
@@ -766,13 +783,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
-
-h4 {
-    color: #333333!important;
-}
 
 .icons {
     margin-bottom: 14px;
@@ -825,17 +835,20 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #CACCBC!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
+    box-shadow: 0 0 5px 5px white;
+    text-shadow: 2px 2px 2px #364577;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #ED7242!important;
+    color: #364577!important;
+    text-shadow: 0 0 5px white, 0 0 5px white;
 }
 
 .ltc-white {
@@ -973,6 +986,7 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
+
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -982,7 +996,7 @@ h4 {
         width: 100%;
     }
     .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
+        background: rgba(0, 0, 0, .1);
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -992,6 +1006,7 @@ h4 {
         border-right-color: transparent;
         border-left-color: transparent;
     }
+
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
@@ -1089,4 +1104,18 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+    .portfolio-row {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+}
+.contact{
+    font-size: 16px;
+}
+.other-page{
+    color:#364577!important;
+    font-weight: 700;
+}
+.other-page:hover{
+border-bottom: 2px solid #364577;
 }
