@@ -50,7 +50,7 @@ a:hover {
     .quote{
         padding: 3rem 0 6rem 0;
     }
-    li > a:hover{
+    li > a:hover, li > a:focus{
         border-bottom: 2px solid #364775;
         margin-bottom: -2px!important;
         color: black!important;
@@ -566,12 +566,16 @@ button {
 .scrollToTop {
     width: 40px;
     height: 40px;
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
+    bottom: 170px;
     right: 20px;
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+    background-color: #364577!important;
+}
+.fa-chevron-up{
+    color: white;
 }
 
 .scrollToTop span {
@@ -840,9 +844,8 @@ h3 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #171E36!important;
     box-shadow: 0 0 5px 5px white;
-    text-shadow: 2px 2px 2px #364577;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1118,4 +1121,9 @@ h3 {
 }
 .other-page:hover{
 border-bottom: 2px solid #364577;
+}
+.formbutton {
+    background-color: #ED7242!important;
+    color: white!important;
+    text-shadow: 2px 2px 5px black;
 }
