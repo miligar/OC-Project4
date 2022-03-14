@@ -13,7 +13,7 @@ button {
     outline: none!important;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: none;
     cursor: pointer;
 }
@@ -147,7 +147,7 @@ a:hover {
     color: rgba(255, 255, 255, .7);
 }
 
-.d-bloc button:hover {
+.d-bloc button:hover,  .d-bloc button:focus{
     color: rgba(255, 255, 255, .9);
 }
 
@@ -196,13 +196,29 @@ a:hover {
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
+.d-bloc .a-btn:focus,
+.d-bloc .navbar a:focus,
+.d-bloc .navbar-brand:focus,
+.d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl,
+.d-bloc h1 a:focus,
+.d-bloc h2 a:focus,
+.d-bloc h3 a:focus,
+.d-bloc h4 a:focus,
+.d-bloc h5 a:focus,
+.d-bloc h6 a:focus,
+.d-bloc p a:focus {
+    color: rgba(255, 255, 255, 1);
+}
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
+.d-bloc .btn-wire:hover, .d-bloc .btn-wire:focus {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
 }
@@ -631,7 +647,11 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-
+@media (max-width: 768px){
+    a:hover, a:focus{
+    font-weight: 700;
+}
+}
 label{
     font-size: 16px;
     font-weight: 600;
@@ -686,7 +706,7 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
-.social:hover{
+.social:hover, .social:focus{
     color: #E4EF6C!important;
 }
 
@@ -769,9 +789,9 @@ h3 {
     box-shadow: 0 0 5px 5px white;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus  {
     background: #ED7242!important;
-    color: #364577!important;
+    color: #000000!important;
     text-shadow: 0 0 5px white, 0 0 5px white;
 }
 
@@ -1051,3 +1071,15 @@ border-bottom: 2px solid #364577;
 #bloc-8{
     padding-bottom: 60px;
 }
+
+input:invalid {
+    border: 1px solid red;
+  }
+  
+  input:invalid  {
+    color: red;
+  }
+  
+  input:valid {
+    border: 1px solid green;
+  }
